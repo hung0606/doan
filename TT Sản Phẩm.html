@@ -3,11 +3,15 @@
    <head>
       <title></title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       <style>
          * {
          padding: 0px;
          margin: 0px;
          }
+         body {
+               background: #f2f0f0
+            }
          .dropdown{
          position: relative;
          display: inline-block;
@@ -20,6 +24,9 @@
          z-index: 1;
          list-style: none;
          }
+         .dropdown-item:hover{
+         font-size: 150%
+         }
          .dropdown:hover .dropdown-content{
          display: block;
          }
@@ -29,13 +36,64 @@
          padding: 10px 10px 0px 0px;       
          }
          #menu-left{
-         background: #613813;
+         background: #613813;         
          }
          .ol ol li{
          font-size: 15px
          }
          .spa span{
-         	font-size: 14px
+         	font-size: 14px;
+            padding: 0px;
+         }
+         .sk a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+         }
+         .sk a:hover{
+            color: #FFC000
+         }
+         .right{
+            padding-left: 10px
+         }
+         .left{
+            padding-left: 15px
+         }
+         .cl p{  
+            color: red;
+            text-align: center;
+         }
+         .cl h3{
+            padding-top: 18px
+         }
+         .cl{
+            display: flex;
+            justify-content: space-between;
+            background: #ababab4d
+         }
+         .bot p{
+            margin: 0px;
+            font-size: 15px;
+         }
+         .icon {
+         float: left;
+         padding-top: 20px;
+         padding-left: 30px;
+         margin: 0px;
+         color: white;
+         }
+         .footerr ul li a{
+         color: white;
+         text-decoration: none;
+         }
+         .footerr ul li a:hover{
+         color: blue
+         }
+         .footer ul{
+         list-style-type: none;
+         }
+         .hove ul li a:hover{
+         color: #FFC000
          }
       </style>
    </head>
@@ -43,23 +101,41 @@
       <div id="header">
          <div class="container">
             <div class="row">
-               <div class="col-md-3">
+               <div class="col-md-4">
                   <h2 style="padding: 10px 10px 0px 0px">Văn Hùng Watch</h2>
                </div>
-               <div class="col-md-4"  style="padding: 10px 10px 0px 0px">
-                  <form class="form-inline my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+               <div class="col-md-4 pt-3">
+                  <div class="row">
+                     <div style="float: left;">
+                        <form action="">
+                           <input type="text" placeholder="Nhập từ khóa tìm kiếm..." size="35px"/>
+                        </form>
+                     </div>
+                     <div style="float: right;">
+                        <button class="btnsearch" style="width: 32px;height: 30px">
+                        <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </div>
                </div>
-               <div class="col-md-2" style="padding: 10px 10px 0px 10px">Giỏ hàng</div>
-               <div class="col-md-1" style="padding: 10px 10px 0px 10px">
-                  <p style="margin: 0px; text-align: center;">Hotline</p>
-                  <p>1800.9812</p>
+               <div class="col-md-2 pt-3">
+                  <div class="" style="float: left; padding-left: 20px">
+                     <img src="hotline.png.png" alt="">
+                  </div>
+                  <div class="" style="float: right;">
+                     <p style="margin: 0px; font-size: 18px; text-align: center;">Hotline</p>
+                     <p style="text-align: center; color: #FEE437">0964376239</p>
+                  </div>
                </div>
-               <div class="col-md-2" style="padding: 10px">
-                  <p style="margin: 0px; text-align: center;">Hệ thống cửa hàng</p>
-                  <p style="text-align: center;">(100) showroom</p>
+               <div class="col-md-2 pt-3">
+                  <div class="left" style="float: left; padding-left: 43px">
+                     <button style="width: 34px; height: 30px">
+                     <i class="fas fa-shopping-cart"></i>
+                     </button>
+                  </div>
+                  <div class="right" style="float: right;">
+                     <a style="text-decoration: none; color: white;font-size: 18px" href="">Giỏ hàng</a>
+                  </div>
                </div>
             </div>
          </div>
@@ -67,9 +143,12 @@
       <div class="container sticky-top" style="background: white">
          <div class="row">
             <div class="col-md-3" id="menu-left">
+               <div class="icon">
+                  <i class="fas fa-align-justify"></i>
+               </div>
                <div class="menu-left">
                   <li class="nav-item dropdown">
-                     <a class="nav-link" href="#" id="navbarDropdown" style="color: white; padding: 20px;">DANH MỤC SẢN PHẨM</a>
+                     <a class="nav-link" href="#" id="navbarDropdown" style="color: white; padding: 20px 20px 20px 10px;">DANH MỤC SẢN PHẨM</a>
                      <div class="dropdown-content">
                         <a class="dropdown-item" href="#">Đồng hồ chính hảng</a>
                         <div class="dropdown-divider"></div>
@@ -111,8 +190,13 @@
                         </li>
                      </div>
                      <div style="width: 200px; padding: 10px 40px;text-align: center">
-                        <li class="nav-item">
-                           <b><a class="nav-link active" href="#">TÀI KHOẢN</a></b>
+                        <li class="nav-item dropdown">
+                           <b><a class="nav-link" href="#" id="navbarDropdown" style="padding: 10px;">TÀI KHOẢN</a></b>
+                           <div class="dropdown-content">
+                              <a class="dropdown-item" href="Đăng Kí.html">Đăng Ký</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Đăng Nhập.html">Đăng Nhập</a>                                  
+                           </div>
                         </li>
                      </div>
                   </ul>
@@ -120,53 +204,61 @@
             </div>
          </div>
       </div>
-      <div class="container mt-3" style="text-align: center;">
-         <a href="">Đồng hồ Nam Jacques Lemans chính hãng</a>
+      <div class="container mt-3" >
+         <a style="text-decoration: none; color: black; font-size: 18px" href="">Đồng hồ Nam Jacques Lemans chính hãng</a>
       </div>
       <div class="container mt-3">
          <div class="form-group">
             <div class="row">
-               <div class="col-md-3" style="background: red">
-                  <div class="left" style="float: left;">
-                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhnam.jpg" width="40" height="40" alt="">
+               <div class="col-md-3">
+                  <dv class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhnam.jpg" width="75" height="75" alt="">
                   </div>
                   <div class="right" style="float: right">
                      <h6>ĐỒNG HỒ NAM</h6>
-                     <p>Có 1500 sản phẩm</p>
+                     <p>Có <b>1500</b> sản phẩm</p>
                   </div>
+                  </dv>
                </div>
-               <div class="col-md-3" style="background: red">
-                  <div class="left" style="float: left;">
-                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhnu.jpg" width="40" height="40" alt="">
+               <div class="col-md-3">
+                  <div class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhnu.jpg" width="75" height="75" alt="">
                   </div>
                   <div class="right" style="float: right">
                      <h6>ĐỒNG HỒ NỮ</h6>
-                     <p>Có 672 sản phẩm</p>
+                     <p>Có <b>672</b> sản phẩm</p>
+                  </div>
                   </div>
                </div>
-               <div class="col-md-3" style="background: red">
-                  <div class="left" style="float: left;">
-                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhdoi.jpg" width="40" height="40" alt="">
+               <div class="col-md-3"   >
+                  <div class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhdoi.jpg" width="75" height="75" alt="">
                   </div>
                   <div class="right" style="float: right">
                      <h6>ĐỒNG HỒ ĐÔI</h6>
-                     <p>Có 400 sản phẩm</p>
+                     <p>Có <b>400</b> sản phẩm</p>
+                  </div>
                   </div>
                </div>
-               <div class="col-md-3" style="background: red">
-                  <div class="left" style="float: left;">
-                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhtreem.jpg" width="40" height="40" alt="">
+               <div class="col-md-3">
+                  <div class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhtreem.jpg" width="75" height="75" alt="">
                   </div>
                   <div class="right" style="float: right">
                      <h6>ĐỒNG HỒ TRẺ EM</h6>
-                     <p>Có 300 sản phẩm</p>
+                     <p>Có <b>300</b> sản phẩm</p>
+                  </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <div class="container">
-         <b><a href="">Đồng hồ Jacques Lemans - Nam</a></b>
+      <div class="container mb-2">
+         <b><a style="text-decoration: none; font-size: 17px" href="">Đồng hồ Jacques Lemans - Nam</a></b>
       </div>
       <div class="container">
          <div class="form-group">
@@ -195,22 +287,22 @@
                </div>
                <div class="col-md-6">
                   <div>
-                     <h3><a href="">Đồng hồ Jacques Lemans JL-1-1654.2ZH</a></h3>
+                     <h3><a style="text-decoration: none; color: #FFC000" href="">Đồng hồ Jacques Lemans JL-1-1654.2ZH</a></h3>
                   </div>
-                  <div style="display: flex;justify-content: space-between;">
+                  <div class="cl">
                      <div>
-                        <p>Giá niêm yết</p>
+                        <h4>Giá niêm yết</h4>
                         <p>6.640.000 đ</p>
                      </div>
                      <div>
-                        <h2>SALE 5%</h2>
+                        <h3>SALE 5%</h3>
                      </div>
                      <div>
-                        <p>Giá khuyến mãi</p>
+                        <h4>Giá khuyến mãi</h4>
                         <p>6.320.000 đ</p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row bot mt-4 mb-3">
                      <div class="col-md-3">
                         <p>Đường kính mặt</p>
                         <b>
@@ -228,9 +320,6 @@
                         <b>
                            <p>Krysterna crystal</p>
                         </b>
-                        <b>
-                           <p>( kính cứng )</p>
-                        </b>
                      </div>
                      <div class="col-md-3">
                         <p>Năng lượng sử dụng</p>
@@ -239,13 +328,13 @@
                         </b>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row pl-3 mb-1">
                      <div>
-                        <img src="https://www.dangquangwatch.vn/view/pic/KMKM1.jpg" alt="">
+                        <a href=""><img src="https://www.dangquangwatch.vn/view/pic/KMKM1.jpg" alt=""></a>
                      </div>
-                     <div>
-                        <p>Tặng ngay kính Philippe August hoặc Diamond D</p>
-                        <p>Khi mua đồng hồ trị giá trên 5 triệu.</p>
+                     <div class="pl-4" style="color: #FFC000">
+                        <b><p>Tặng ngay kính Philippe August hoặc Diamond D</p></b>
+                        <b><p>Khi mua đồng hồ trị giá trên 5 triệu.</p></b>
                      </div>
                   </div>
                   <div>
@@ -253,8 +342,7 @@
                   </div>
                   <div class="bnt card mb-3" style="padding: 10px; background: #2586D3">
                      <b style="text-align: center;"><span>MUA NGAY</span></b>
-                     <span style="text-align: center;">Giao hàng miễn phí - Thanh toán tại nhà</span>
-                     </a>
+                     <span style="text-align: center;">Giao hàng miễn phí - Thanh toán tại nhà</span>    
                   </div>
                   <div class="bnt card" style="padding: 10px; background: #FED700">
                      <b style="text-align: center;"><span >TRẢ GÓP 0% DỂ DÀNG QUA THẺ</span></b>
@@ -265,7 +353,7 @@
             </div>
          </div>
       </div>
-      <div class="container">
+      <div class="container mt-4">
       <div class="form-group">
          <div class="row">
             <div class="col-md-8">
@@ -298,25 +386,25 @@
                   </ol>
                </div>
             </div>
-            <div class="col-md-4 spa">
-               <h4 style="text-align: center;">THÔNG SỐ KỸ THUẬT</h4>
-               <div class="row">
+            <div class="col-md-4 spa" style="background: #ababab2d;">
+               <h4 class="mt-4" style="text-align: center;">THÔNG SỐ KỸ THUẬT</h4>
+               <div class="row mt-2" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Đường kính mặt</span>
                   </div>
                   <div class="col-md-7">
-                     <span>38 mm</span>
+                     <a href="" style="text-decoration: none;"><span>38 mm</span></a>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Chống nước</span>
                   </div>
                   <div class="col-md-7">
-                     <span>10 ATM</span>
+                     <a href="" style="text-decoration: none;"><span>10 ATM</span></a>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Chất liệu mặt</span>
                   </div>
@@ -324,7 +412,7 @@
                      <span>hardened crystex crystal (Kính cứng )</span>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Năng lượng sử dụng</span>
                   </div>
@@ -332,15 +420,15 @@
                      <span>Quartz (Điện tử)</span>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Size dây</span>
                   </div>
                   <div class="col-md-7">
-                     <span>19 mm</span>
+                     <a href="" style="text-decoration: none;"><span>19 mm</span></a>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Chất liệu dây</span>
                   </div>
@@ -348,7 +436,7 @@
                      <span>Dây da</span>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Chất liệu vỏ</span>
                   </div>
@@ -356,7 +444,7 @@
                      <span>Thép không gỉ mạ PVD rose gold</span>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Kiểu dáng</span>
                   </div>
@@ -364,7 +452,7 @@
                      <span>Nam</span>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Xuất xứ</span>
                   </div>
@@ -372,12 +460,281 @@
                      <span>Áo</span>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="border-bottom: 1px solid #ababab2d">
                   <div class="col-md-5">
                      <span>Bảo hành</span>
                   </div>
                   <div class="col-md-7">
                      <span>Chế độ bảo hành 10 năm</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container sk">
+         <div class="form-group">
+            <div class="row">
+               <div class="col-md-8">
+                  <h4 style="text-align: center; padding-bottom: 15px">Có thể bạn sẽ thích</h4>
+                  <div class="row">
+                     <div class="card mr-5" style="width: 12rem;">
+                       <img src="https://www.dangquangwatch.vn/upload/product/643523283_%C4%91%C3%B2ng-h%E1%BB%93-ch%C3%ADnh-h%C3%A3ng-27.jpg" class="card-img-top"  height="200" alt="...">
+                       <div class="card-body">
+                         <h6 style="font-size: 18px; text-align: center" class="card-title">Đồng hồ Jacques Lemans JL-42-5B - Nam</h6>
+                         <b><p class="card-text" style="color: red; text-align: center;">5.770.000 đ</p></b>
+                       </div>
+                     </div>
+                     <div class="card mr-5" style="width: 12rem;">
+                       <img src="https://www.dangquangwatch.vn/upload/product/1696758849_42-6B5.jpg" class="card-img-top"  height="200" alt="...">
+                       <div class="card-body">
+                         <h6 style="font-size: 18px; text-align: center" class="card-title">Đồng hồ Jacques Lemans JL-42-6B - Nam</h6>
+                         <b><p class="card-text" style="color: red; text-align: center;">5.770.000 đ</p></b>
+                       </div>
+                     </div>
+                     <div class="card" style="width: 12rem;">
+                       <img src="https://www.dangquangwatch.vn/upload/product/1672856611_%C4%91%C3%B2ng-h%E1%BB%93-ch%C3%ADnh-h%C3%A3ng-30.jpg" class="card-img-top" height="200" alt="...">
+                       <div class="card-body">
+                         <h6 style="font-size: 18px; text-align: center;" class="card-title">Đồng hồ Jacques Lemans JL-42-5C - Nam</h6>
+                         <b><p class="card-text" style="color: red; text-align: center;">5.770.000 đ</p></b>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <b><h4 style="text-align: center; padding-bottom: 15px; border-bottom: 1px solid black; font-size: 20px">TIN TỨC - SỰ KIỆN</h4></b>
+                  <div class="row">
+                     <div class="col-md-4 mb-4">
+                        <a href=""><img src="https://www.dangquangwatch.vn/upload/article/2064580736_tin-tuc2606.jpg" width="100" height="60" alt=""></a>
+                     </div>
+                     <div class="col-md-8">
+                        <a href="">MUA 2 TÍNH TIỀN MỘT - ƯU ĐÃI TẶNG KÍNH MÁT 5 TRIỆU ĐỒNG</a>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 mb-4">
+                        <a href=""><img src="https://www.dangquangwatch.vn/upload/article/717364511_khaitruongthainguyen.jpg" width="100" height="60" alt=""></a>
+                     </div>
+                     <div class="col-md-8">
+                        <a href="">Văn Hùng Watch Đà Nẵng – Giảm giá cực lớn lên đến 25%</a>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 mb-4">
+                        <a href=""><img src="https://www.dangquangwatch.vn/upload/article/635838293_dau-gia.jpg" width="100" height="60" alt=""></a>
+                     </div>
+                     <div class="col-md-8">
+                        <a href="">ĐẤU GIÁ NGAY-GIÁ RẺ VỀ TAY TỪ 40%</a>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-4 mb-4">
+                        <a href=""><img src="https://www.dangquangwatch.vn//upload/article/717364511_khaitruongthainguyen.jpg" width="100" height="60" alt=""></a>
+                     </div>
+                     <div class="col-md-8">
+                        <a href="">MUA NGAY SẢN PHẨM</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="footer" style="background-image: url(https://i.ytimg.com/vi/AkPGQyCKj7s/maxresdefault.jpg);">
+         <div class="container mb-5">
+            <div class="row">
+               <div class="col-md-2"></div>
+               <div class="col-md-8" style="text-align: center; color: #FFC000">
+                  <h1>Tin tức - Sự kiện</h1>
+                  <p>Tin tức & sự kiện, kiến thức về đồng hồ - kính mát, thông tin khuyến mãi, video clip về đồng hồ đeo tay mới nhất hiện nay, cập nhật liên tục nhanh và đầy đủ ...</p>
+               </div>
+               <div class="col-md-2"></div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-md-7" style="padding: 0 40px 0 0;" >
+                     <div>
+                        <img src="https://www.dangquangwatch.vn/lib/ckfinder/images/103678229_3023684284416572_1318405893531154371_o.jpg" width="664" alt="">
+                     </div>
+                     <div>
+                        <a href="" style="color: #FFC000; text-decoration: none;">Đồng hồ Epos Swiss-Nguồn cảm hứng đến từ sự hoàn mỹ</a>
+                     </div>
+                     <hr style="background: #FFC000">
+                     <div class="row">
+                        <div style="padding: 0px 20px 0px 12px; margin: 0px" >
+                           <img src="https://www.dangquangwatch.vn/upload/homeads/82963313_dong-ho-nhap-khau50.jpg" width="160" height="120" alt="">
+                        </div>
+                        <div style="padding: 0px 20px; margin: 0px">
+                           <img src="https://www.dangquangwatch.vn/upload/homeads/1581105307_dong-ho-thuy-sy64.jpg" width="160" height="120" alt="">
+                        </div>
+                        <div style="padding: 0px 20px; margin: 0px">
+                           <img src="https://www.dangquangwatch.vn/upload/homeads/455081688_dong-ho-nu-thoi-trang65.jpg" width="160" height="120" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5" style="padding: 0px 0px 0px 20px;">
+                     <div style="margin-bottom: 10px;">
+                        <img src="https://www.dangquangwatch.vn//upload/article/1586976221_103678229_3023684284416572_1318405893531154371_o.jpg" width="475" height="225" alt="">
+                        <a href="" style="color: #FFC000; text-decoration: none;">MUA 2 TÍNH TIỀN 1 - ƯU ĐÃI TẶNG VOUCHER 5 TRIỆU ĐỒNG</a>
+                     </div>
+                     <hr style="background: #FFC000">
+                     <div class="from-group" style="margin-bottom: 10px;">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <a href=""><img src="https://www.dangquangwatch.vn//upload/article/341125332_KT-TN176M.jpg" width="137" height="91" alt=""></a>
+                           </div>
+                           <div class="col-md-8" >
+                              <a href="" style="color: #FFC000; text-decoration: none;">Đăng Quang Watch Thái Nguyên – Giảm giá cực lớn lên đến 25%</a>
+                           </div>
+                        </div>
+                     </div>
+                     <hr style="background: #FFC000">
+                     <div class="form-group">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <a href=""><img src="https://www.dangquangwatch.vn//upload/article/1621593732_95525952_3113472822084377_7617001332678852608_o.jpg" width="137" height="91" alt=""></a>
+                           </div>
+                           <div class="col-md-8">
+                              <a href="" style="color: #FFC000; text-decoration: none;">ĐẤU GIÁ NGAY-GIÁ RẺ VỀ TAY TỪ 40%</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="row">
+                           <div class="col-md-4"></div>
+                           <div class="col-md-4">
+                              <a href="" style="color: #FFC000; text-decoration: none;">Xem tất cả</a>
+                           </div>
+                           <div class="col-md-4"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr style="background: #FFC000">
+         <div class="container">
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-3" style="color: #FFC000">
+                     <div>
+                        <h3>VĂN HÙNG WATCH</h3>
+                     </div>
+                     <div>
+                        <p>ĐẲNG CẤP DOANH NHÂN</p>
+                     </div>
+                  </div>
+                  <div class="col-md-2" style="color: #FFC000">
+                     <h3>ĐẤU GIÁ.<sup>TV</sup> </h3>
+                  </div>
+                  <div class="col-md-3" style="color: #FFC000">
+                     <h3>VĂN HÙNG WATCH</h3>
+                     <p>Thời Trang & Phong Cách</p>
+                  </div>
+                  <div class="col-md-2"></div>
+               </div>
+            </div>
+         </div>
+         <div class="footerr" style="background: #A0522D">
+            <div class="container">
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-md-3 mt-3">
+                        <ul>
+                           <h5 style="color: #FFC000">THÔNG TIN CHUNG</h5>
+                           <li>
+                              <a href="">Giới thiệu chung</a>
+                           </li>
+                           <li>
+                              <a href="">Kênh tuyển dụng</a>
+                           </li>
+                           <li>
+                              <a href="">Tin tức - Sự kiện</a>
+                           </li>
+                           <li>
+                              <a href="">Hệ thống cửa hàng</a>
+                           </li>
+                           <li>
+                              <a href="">Cộng đồng khách hàng</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 mt-3">
+                        <ul>
+                           <h5 style="color: #FFC000">HỖ TRỢ KHÁCH HÀNG</h5>
+                           <li>
+                              <a href="">1. Chính sách bảo hành</a>  
+                           </li>
+                           <li>
+                              <a href="">2. Chính sách đổi hàng</a>
+                           </li>
+                           <li>
+                              <a href="">3. Chính sách bảo mật</a>
+                           </li>
+                           <li>
+                              <a href="">4. Chính sách vận chuyển</a>
+                           </li>
+                           <li>
+                              <a href="">5. Hướng dẫn thanh toán</a>
+                           </li>
+                           <li>
+                              <a href="">6. Hướng dẫn mua hàng</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 mt-3">
+                        <ul>
+                           <h5 style="color: #FFC000">HƯỚNG DẪN & TƯ VẤN</h5>
+                           <li>
+                              <a href="">Góc Hỏi đáp</a>
+                           </li>
+                           <li>
+                              <a href="">Chứng nhận thương hiệu</a>
+                           </li>
+                           <li>
+                              <a href="">Hệ thống cửa hàng</a>
+                           </li>
+                           <li>
+                              <a href="">Tin tức - Sự kiện</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 mt-3">
+                        <div class="form-group">
+                           <div class="row">
+                              <h5 style="padding: 0 0 10px 0; color: #FFC000">KẾT NỐI VỚI CHÚNG TÔI</h5>
+                              <a href="https://www.facebook.com/hungH24"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="60px" height="40px" style="padding:0px 10px 0px 0px" alt=""></a>
+                              <a href=""><img src="https://pmcdeadline2.files.wordpress.com/2016/09/twitter-logo.jpg" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://www.engage.it/wp-content/uploads/2014/07/Linkedin-Logo-e1406137001949.png" width="50px" height="40px" alt=""></a>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div>
+                              <img src="https://www.dangquangwatch.vn/view/css/icon/bct2.png" alt="">
+                           </div>
+                           <div style="padding-left: 10px">
+                              <img src="https://www.dangquangwatch.vn/view/css/icon/bct.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footerrr" style="background: #140B04">
+               <div class="container">
+                  <div style="text-align: center;">
+                     <div>
+                        <b><a href="" style="color: #FFC000">CÔNG TY CỔ PHẦN TRỰC TUYẾN VĂN HÙNG</a></b>
+                     </div>
+                     <div>
+                        <p style="padding: 0px;margin: 0px; color: white">VPGD: Số 55 Nguyễn Văn Linh – Hải Châu – TP. Đà Nẵng - Email: sieuthivvanhung@gmail.com</p>
+                     </div>
+                     <div>
+                        <p style="color: white">Giấy CNĐKKD và MSDN số: 0104938104 đăng ký lần đầu do Sở Kế hoạch và Đầu tư Thành phố Đà Nẵng cấp ngày 07/10/2010</p>
+                     </div>
                   </div>
                </div>
             </div>

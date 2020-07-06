@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src=""></script>
+      <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+      <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <style>
+      	* {
+         padding: 0px;
+         margin: 0px;
+         }
+         body {
+         background: #f2f0f0
+         }
+         .dropdown{
+         position: relative;
+         display: inline-block;
+         }
+         /*sub-menu*/
+         .dropdown-content{
+         display: none;
+         position: absolute;
+         background-color: #f5f5f5;
+         z-index: 1;
+         list-style: none;
+         }
+         .dropdown-item:hover{
+         font-size: 150%
+         }
+         .dropdown:hover .dropdown-content{
+         display: block;
+         }
+         .header{
+         background: #362314;
+         color: white;
+         padding: 10px 10px 0px 0px;       
+         }
+         #menu-left{
+         background: #613813;         
+         }
+         .icon {
+         float: left;
+         padding-top: 20px;
+         padding-left: 30px;
+         margin: 0px;
+         color: white;
+         }
+         .right{
+            padding-left: 10px
+         }
+         .han .right h6{
+         	text-align: center;
+         	font-size: 14px;
+         }
+         .han .right a{
+         	text-decoration: none;
+         	color: black
+         }
+         .han .right h6:hover{
+         	color: #FFC000
+         }
+         .texta .form-group a{
+         	text-decoration: none;
+         	color: black
+         }
+         .texta .form-group a:hover{
+         	color: blue
+         }
+         #gold .row .card{
+         min-height: 400px;
+         width: 11rem;
+         }
+         #gold .row .card span{
+         	text-align: center;
+         }
+         #gold .row .card-body{
+         	padding: 0px;
+         }
+         #gold .row a{
+			 text-decoration: none;
+			 color: black;
+         }
+         #gold p{
+         text-align: center;
+         color: red;
+         }
+         #gold .form-group .row .card{
+         	padding: 10px;
+         	margin: 7px
+         }
+         .footerr ul li a{
+         color: white;
+         text-decoration: none;
+         }
+         .footerr ul li a:hover{
+         color: blue
+         }
+         .footer ul{
+         list-style-type: none;
+         }
+      </style>
+</head>
+<body>
+	<div class="header" id="abc">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <h2 style="padding: 10px 10px 0px 0px">Văn Hùng Watch</h2>
+               </div>
+               <div class="col-md-4 pt-3">
+                  <div class="row">
+                     <div style="float: left;">
+                        <form action="">
+                           <input type="text" placeholder="Nhập từ khóa tìm kiếm..." size="35px"/>
+                        </form>
+                     </div>
+                     <div style="float: right;">
+                        <button class="btnsearch" style="width: 32px;height: 30px">
+                        <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2 pt-3">
+                  <div class="" style="float: left; padding-left: 20px">
+                     <img src="hotline.png.png" alt="">
+                  </div>
+                  <div class="" style="float: right;">
+                     <p style="margin: 0px; font-size: 18px; text-align: center;">Hotline</p>
+                     <p style="text-align: center; color: #FEE437">0964376239</p>
+                  </div>
+               </div>
+               <div class="col-md-2 pt-3">
+                  <div class="" style="float: left; padding-left: 50px">
+                     <button style="width: 34px; height: 30px">
+                     <i class="fas fa-shopping-cart"></i>
+                     </button>
+                  </div>
+                  <div class="" style="float: right;">
+                     <a style="text-decoration: none; color: white;font-size: 18px" href="">Giỏ hàng</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container sticky-top" style="background: white">
+         <div class="row">
+            <div class="col-md-3" id="menu-left">
+               <div class="icon">
+                  <i class="fas fa-align-justify"></i>
+               </div>
+               <div class="menu-left">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" id="navbarDropdown" style="color: white; padding: 20px 20px 20px 10px;">DANH MỤC SẢN PHẨM</a>
+                     <div class="dropdown-content">
+                        <a class="dropdown-item" href="#">Đồng hồ chính hảng</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ nam</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ nữ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ đôi</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Phụ kiện đồng hồ</a>   
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ Epos Swiss</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ Atlantic Swiss</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ Diamond D</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đồng hồ Aries Gold</a>    
+                     </div>
+                  </li>
+               </div>
+            </div>
+            <div class="col-md-9 hove" style="padding: 0px;">
+               <div class="row" style="display: flex; justify-content: space-between;">
+                  <ul class="nav">
+                     <div style="width: 200px; padding: 10px 40px;text-align: center;">
+                        <li class="nav-item">
+                           <b><a class="nav-link active" href="#">ĐỒNG HỒ</a></b>
+                        </li>
+                     </div>
+                     <div style="width: 200px; padding: 10px;text-align: center">
+                        <li class="nav-item">
+                           <b><a class="nav-link active" href="#">KHUYẾN MÃI</a></b>
+                        </li>
+                     </div>
+                     <div style="width: 200px; padding: 10px;text-align: center">
+                        <li class="nav-item">
+                           <b><a class="nav-link active" href="#">PHỤ KIỆN</a></b>
+                        </li>
+                     </div>
+                     <div style="width: 200px; padding: 10px 40px;text-align: center">
+                        <li class="nav-item dropdown">
+                           <b><a class="nav-link" href="#" id="navbarDropdown" style="padding: 10px;">TÀI KHOẢN</a></b>
+                           <div class="dropdown-content">
+                              <a class="dropdown-item" href="Đăng Kí.html">Đăng Ký</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Đăng Nhập.html">Đăng Nhập</a>
+                          </div>
+                        </li>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container mt-2 mb-2" style="padding: 0px">
+      	<div style="padding: 15px 0px; background: white; text-align: center; margin: 0px;">
+      		<a href="" style="text-decoration: none;color: black"><p style="margin: 0px"><b>Đồng hồ chính hãng</b> > <a href="" style="text-decoration: none">Philippe Auguste</a> > Có <b>58</b> sản phẩm</p></a>
+      	</div>
+      </div>
+      <div class="container mt-2 han">
+         <div class="form-group">
+            <div class="row">
+               <div class="col-md-3">
+                  <dv class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhnam.jpg" width="75" height="75" alt="">
+                  </div>
+                  <div class="right" style="float: right">
+                     <a href=""><h6>ĐỒNG HỒ NAM</h6></a>
+                     <p>Có <b>1500</b> sản phẩm</p>
+                  </div>
+                  </dv>
+               </div>
+               <div class="col-md-3">
+                  <div class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhnu.jpg" width="75" height="75" alt="">
+                  </div>
+                  <div class="right" style="float: right">
+                     <a href=""><h6>ĐỒNG HỒ NỮ</h6></a>
+                     <p>Có <b>672</b> sản phẩm</p>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-md-3"   >
+                  <div class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhdoi.jpg" width="75" height="75" alt="">
+                  </div>
+                  <div class="right" style="float: right">
+                     <a href=""><h6>ĐỒNG HỒ ĐÔI</h6></a>
+                     <p>Có <b>400</b> sản phẩm</p>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="row">
+                     <div class="left" style="float: left;">
+                     <img src="https://www.dangquangwatch.vn/view/pic/m_dhtreem.jpg" width="75" height="75" alt="">
+                  </div>
+                  <div class="right" style="float: right">
+                     <a href=""><h6>ĐỒNG HỒ TRẺ EM</h6></a>
+                     <p>Có <b>300</b> sản phẩm</p>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-2" style="padding: 0px">
+               <a href=""><img src="AriesGold.jpg" alt=""></a>
+            </div>
+            <div class="col-md-2" style="padding: 0px">
+               <a href=""><img src="Atlatic.jpg" alt=""></a>
+            </div>
+            <div class="col-md-2" style="padding: 0px">
+               <a href=""><img src="DiamondD.jpg" alt=""></a>
+            </div>
+            <div class="col-md-2" style="padding: 0px">
+               <a href=""><img src="Epos.jpg" alt=""></a>
+            </div>
+            <div class="col-md-2" style="padding: 0px">
+               <a href=""><img src="PA.jpg" alt=""></a>
+            </div>
+            <div class="col-md-2" style="padding: 0px">
+               <a href=""><img src="Jacques.jpg" alt=""></a>
+            </div>
+         </div>
+      </div>
+      <div class="container mt-2" style=" background: white; border-left: 5px solid blue">
+      	<div style="padding: 10px 0px;">
+      		<a href="" style="text-decoration: none; color: black"><h6><b>Đồng hồ Philippe Auguste</b></h6></a>
+      	</div>
+      </div>
+      <div class="container texta mt-2" style="background: white">
+      	<div class="form-group" style="padding: 10px"> 
+      		<div class="row">
+	      		<div class="col-md-1" style="padding: 0px">
+	      			<a href="" style="color: blue">Giá:</a>
+	      		</div>
+	      		
+	      			<div class="col-md-11">
+	      				<div class="row">
+			      			<div class="col-md-1.5">
+			      				<a href="">Dưới 2 triệu</a>
+			      			</div>
+			      			<div class="col-md-1.5 ml-3">
+			      				<a href="">Từ 2 - 5 triệu</a>
+			      			</div>
+			      			<div class="col-md-1.5 ml-3">
+			      				<a href="">Từ 5 - 10 triệu</a>
+			      			</div>
+			      			<div class="col-md-1.5 ml-3">
+			      				<a href="">Từ 10 - 20 triệu</a>
+			      			</div>
+			      			<div class="col-md-1.5 ml-3">
+			      				<a href="">Từ 20 - 50 triệu</a>
+			      			</div>
+			      			<div class="col-md-1.5 ml-3">
+			      				<a href="">Trên 50 triệu</a>
+			      			</div>
+			      			<div class="col-md-2"></div>
+		      			</div>
+	      			</div>      			
+      		</div>
+      	</div>
+      </div>
+      <div class="container" id="gold" style="background: white;">
+      	<div class="form-group">
+      		<div class="row">
+      			<div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/784610833_dong-ho-nhap-khau.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500844H</h6>
+                        </a>                     
+                     <p class="card-text">3.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1494321812_dong-ho-nhap-khau3.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500814H</h6>
+                        </a>                     
+                     <p class="card-text">4.528.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/67724650_dong-ho-nhap-khau4.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500843H</h6>
+                        </a>                     
+                     <p class="card-text">11.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/202451360_dong-ho-nhap-khau2.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500821H</h6>
+                        </a>                     
+                     <p class="card-text">5.185.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/2132524758_DONG-HO-NHAP-KHAU5.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500134H</h6>
+                        </a>                     
+                     <p class="card-text">7.925.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/2078177429_DONG-HO-NHAP-KHAU6.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA501234H</h6>
+                        </a>                     
+                     <p class="card-text">13.675.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/777381163_dong-ho-nhap-khau8.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA551234K</h6>
+                        </a>                     
+                     <p class="card-text">4.992.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1432153761_dong-ho-nhap-khau9.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA502144M</h6>
+                        </a>                     
+                     <p class="card-text">3.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/828322507_DONG-HO-NHAP-KHAU7.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500844L</h6>
+                        </a>                     
+                     <p class="card-text">1.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1334477955_dong-ho-nhap-khau10.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA500844N</h6>
+                        </a>                     
+                     <p class="card-text">16.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/282562145_dong-ho-nhap-khau11.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA210844H</h6>
+                        </a>                     
+                     <p class="card-text">3.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1284625766_dong-ho-nhap-khau12.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA509044H</h6>
+                        </a>                     
+                     <p class="card-text">33.450.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/572581815_dong-ho-nhap-khau13.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA50844F</h6>
+                        </a>                     
+                     <p class="card-text">8.770.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/2082318285_dong-ho-nhap-khau14.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PC0144F</h6>
+                        </a>                     
+                     <p class="card-text">3.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1330665752_dong-ho-nhap-khau15.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PB0844F</h6>
+                        </a>                     
+                     <p class="card-text">4.636.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/99499183_dong-ho-nhap-khau16.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PR50844F</h6>
+                        </a>                     
+                     <p class="card-text">5.953.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1932436227_dong-ho-nhap-khau18.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA51844F</h6>
+                        </a>                     
+                     <p class="card-text">9.126.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/2007171123_dong-ho-nhap-khau19.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PAL9AS</h6>
+                        </a>                     
+                     <p class="card-text">1.880.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/176722357_DONG-HO-CHINH-HANG-19.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA2132F</h6>
+                        </a>                     
+                     <p class="card-text">5.555.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/305117350_dong-ho-nhap-khau20.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PACZ844F</h6>
+                        </a>                     
+                     <p class="card-text">11.885.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/309824082_dong-ho-nhap-khau21.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA54844F</h6>
+                        </a>                     
+                     <p class="card-text">12.225.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/1987318509_dong-nho-nhap-khau23.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PAC204F</h6>
+                        </a>                     
+                     <p class="card-text">15.510.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/81602254_dong-ho-nhap-khau25.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PAA0844F</h6>
+                        </a>                     
+                     <p class="card-text">22.111.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>
+               <div class="card">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product/630880838_DONG-HO-CHINH-HANG-16.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                     <a href="TT Sản Phẩm.html">
+                           <h6 class="card-title">Đồng hồ Philippe Auguste PA844F</h6>
+                        </a>                     
+                     <p class="card-text">23.312.000 đ</p>
+                  </div>
+                  <span><a style="color: white" href="TT Sản Phẩm.html" class="btn btn-primary">MUA NGAY</a></span>
+               </div>	
+      		</div>
+      	</div>
+      </div>
+      <div class="footer" style="background-image: url(https://i.ytimg.com/vi/AkPGQyCKj7s/maxresdefault.jpg);">
+         <div class="container mb-5">
+            <div class="row">
+               <div class="col-md-2"></div>
+               <div class="col-md-8" style="text-align: center; color: #FFC000">
+                  <h1>Tin tức - Sự kiện</h1>
+                  <p>Tin tức & sự kiện, kiến thức về đồng hồ - kính mát, thông tin khuyến mãi, video clip về đồng hồ đeo tay mới nhất hiện nay, cập nhật liên tục nhanh và đầy đủ ...</p>
+               </div>
+               <div class="col-md-2"></div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-md-7" style="padding: 0 40px 0 0;" >
+                     <div>
+                        <img src="https://www.dangquangwatch.vn/lib/ckfinder/images/103678229_3023684284416572_1318405893531154371_o.jpg" width="664" alt="">
+                     </div>
+                     <div>
+                        <a href="" style="color: #FFC000; text-decoration: none;">Đồng hồ Epos Swiss-Nguồn cảm hứng đến từ sự hoàn mỹ</a>
+                     </div>
+                     <hr style="background: #FFC000">
+                     <div class="row">
+                        <div style="padding: 0px 20px 0px 12px; margin: 0px" >
+                           <img src="https://www.dangquangwatch.vn/upload/homeads/82963313_dong-ho-nhap-khau50.jpg" width="160" height="120" alt="">
+                        </div>
+                        <div style="padding: 0px 20px; margin: 0px">
+                           <img src="https://www.dangquangwatch.vn/upload/homeads/1581105307_dong-ho-thuy-sy64.jpg" width="160" height="120" alt="">
+                        </div>
+                        <div style="padding: 0px 20px; margin: 0px">
+                           <img src="https://www.dangquangwatch.vn/upload/homeads/455081688_dong-ho-nu-thoi-trang65.jpg" width="160" height="120" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5" style="padding: 0px 0px 0px 20px;">
+                     <div style="margin-bottom: 10px;">
+                        <img src="https://www.dangquangwatch.vn//upload/article/1586976221_103678229_3023684284416572_1318405893531154371_o.jpg" width="475" height="225" alt="">
+                        <a href="" style="color: #FFC000; text-decoration: none;">MUA 2 TÍNH TIỀN 1 - ƯU ĐÃI TẶNG VOUCHER 5 TRIỆU ĐỒNG</a>
+                     </div>
+                     <hr style="background: #FFC000">
+                     <div class="from-group" style="margin-bottom: 10px;">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <a href=""><img src="https://www.dangquangwatch.vn//upload/article/341125332_KT-TN176M.jpg" width="137" height="91" alt=""></a>
+                           </div>
+                           <div class="col-md-8" >
+                              <a href="" style="color: #FFC000; text-decoration: none;">Đăng Quang Watch Thái Nguyên – Giảm giá cực lớn lên đến 25%</a>
+                           </div>
+                        </div>
+                     </div>
+                     <hr style="background: #FFC000">
+                     <div class="form-group">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <a href=""><img src="https://www.dangquangwatch.vn//upload/article/1621593732_95525952_3113472822084377_7617001332678852608_o.jpg" width="137" height="91" alt=""></a>
+                           </div>
+                           <div class="col-md-8">
+                              <a href="" style="color: #FFC000; text-decoration: none;">ĐẤU GIÁ NGAY-GIÁ RẺ VỀ TAY TỪ 40%</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="row">
+                           <div class="col-md-4"></div>
+                           <div class="col-md-4">
+                              <a href="" style="color: #FFC000; text-decoration: none;">Xem tất cả</a>
+                           </div>
+                           <div class="col-md-4"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr style="background: #FFC000">
+         <div class="container">
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-3" style="color: #FFC000">
+                     <div>
+                        <h3>VĂN HÙNG WATCH</h3>
+                     </div>
+                     <div>
+                        <p>ĐẲNG CẤP DOANH NHÂN</p>
+                     </div>
+                  </div>
+                  <div class="col-md-2" style="color: #FFC000">
+                     <h3>ĐẤU GIÁ.<sup>TV</sup> </h3>
+                  </div>
+                  <div class="col-md-3" style="color: #FFC000">
+                     <h3>VĂN HÙNG WATCH</h3>
+                     <p>Thời Trang & Phong Cách</p>
+                  </div>
+                  <div class="col-md-2"></div>
+               </div>
+            </div>
+         </div>
+         <div class="footerr" style="background: #A0522D">
+            <div class="container">
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-md-3 mt-3">
+                        <ul>
+                           <h5 style="color: #FFC000">THÔNG TIN CHUNG</h5>
+                           <li>
+                              <a href="">Giới thiệu chung</a>
+                           </li>
+                           <li>
+                              <a href="">Kênh tuyển dụng</a>
+                           </li>
+                           <li>
+                              <a href="">Tin tức - Sự kiện</a>
+                           </li>
+                           <li>
+                              <a href="">Hệ thống cửa hàng</a>
+                           </li>
+                           <li>
+                              <a href="">Cộng đồng khách hàng</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 mt-3">
+                        <ul>
+                           <h5 style="color: #FFC000">HỖ TRỢ KHÁCH HÀNG</h5>
+                           <li>
+                              <a href="">1. Chính sách bảo hành</a>  
+                           </li>
+                           <li>
+                              <a href="">2. Chính sách đổi hàng</a>
+                           </li>
+                           <li>
+                              <a href="">3. Chính sách bảo mật</a>
+                           </li>
+                           <li>
+                              <a href="">4. Chính sách vận chuyển</a>
+                           </li>
+                           <li>
+                              <a href="">5. Hướng dẫn thanh toán</a>
+                           </li>
+                           <li>
+                              <a href="">6. Hướng dẫn mua hàng</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 mt-3">
+                        <ul>
+                           <h5 style="color: #FFC000">HƯỚNG DẪN & TƯ VẤN</h5>
+                           <li>
+                              <a href="">Góc Hỏi đáp</a>
+                           </li>
+                           <li>
+                              <a href="">Chứng nhận thương hiệu</a>
+                           </li>
+                           <li>
+                              <a href="">Hệ thống cửa hàng</a>
+                           </li>
+                           <li>
+                              <a href="">Tin tức - Sự kiện</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3 mt-3">
+                        <div class="form-group">
+                           <div class="row">
+                              <h5 style="padding: 0 0 10px 0; color: #FFC000">KẾT NỐI VỚI CHÚNG TÔI</h5>
+                              <a href="https://www.facebook.com/hungH24"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="60px" height="40px" style="padding:0px 10px 0px 0px" alt=""></a>
+                              <a href=""><img src="https://pmcdeadline2.files.wordpress.com/2016/09/twitter-logo.jpg" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://www.engage.it/wp-content/uploads/2014/07/Linkedin-Logo-e1406137001949.png" width="50px" height="40px" alt=""></a>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div>
+                              <img src="https://www.dangquangwatch.vn/view/css/icon/bct2.png" alt="">
+                           </div>
+                           <div style="padding-left: 10px">
+                              <img src="https://www.dangquangwatch.vn/view/css/icon/bct.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footerrr" style="background: #140B04">
+               <div class="container">
+                  <div style="text-align: center;">
+                     <div>
+                        <b><a href="" style="color: #FFC000">CÔNG TY CỔ PHẦN TRỰC TUYẾN VĂN HÙNG</a></b>
+                     </div>
+                     <div>
+                        <p style="padding: 0px;margin: 0px; color: white">VPGD: Số 55 Nguyễn Văn Linh – Hải Châu – TP. Đà Nẵng - Email: sieuthivvanhung@gmail.com</p>
+                     </div>
+                     <div>
+                        <p style="color: white">Giấy CNĐKKD và MSDN số: 0104938104 đăng ký lần đầu do Sở Kế hoạch và Đầu tư Thành phố Đà Nẵng cấp ngày 07/10/2010</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+</body>
+</html>

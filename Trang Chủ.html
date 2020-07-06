@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title></title>
+      <title>Văn Hùng Watch</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src=""></script>
+      <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+      <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       <style>
-            * {
-            padding: 0px;
-            margin: 0px;
-            }
-            body {
-               background: #f2f0f0
-            }
-            .dropdown{
-            position: relative;
-            display: inline-block;
-            }
-            /*sub-menu*/
-            .dropdown-content{
-            display: none;
-            position: absolute;
-            background-color: #f5f5f5;
-            z-index: 1;
-            list-style: none;
-            }
-            .dropdown:hover .dropdown-content{
-            display: block;
-            }
-            #header{
-            background: #362314;
-            color: white;
-            padding: 10px 10px 0px 0px;       
-            }
-            #menu-left{
-            background: #613813;
-            }
+         * {
+         padding: 0px;
+         margin: 0px;
+         }
+         body {
+         background: #f2f0f0
+         }
+         .dropdown{
+         position: relative;
+         display: inline-block;
+         }
+         /*sub-menu*/
+         .dropdown-content{
+         display: none;
+         position: absolute;
+         background-color: #f5f5f5;
+         z-index: 1;
+         list-style: none;
+         }
+         .dropdown-item:hover{
+         font-size: 150%
+         }
+         .dropdown:hover .dropdown-content{
+         display: block;
+         }
+         .header{
+         background: #362314;
+         color: white;
+         padding: 10px 10px 0px 0px;       
+         }
+         #menu-left{
+         background: #613813;         
+         }
+         .icon {
+         float: left;
+         padding-top: 20px;
+         padding-left: 30px;
+         margin: 0px;
+         color: white;
+         }
          #philippe h6{
          text-align: center;
          }
@@ -64,7 +78,7 @@
          background: white;
          }
          #sp .right a:hover{
-            background: #ababab;
+         background: #ababab;
          }
          .flex {
          display: flex;
@@ -75,44 +89,65 @@
          justify-content: space-between;
          }
          .footerr ul li a{
-            color: white;
-            text-decoration: none;
+         color: white;
+         text-decoration: none;
          }
          .footerr ul li a:hover{
-            color: blue
+         color: blue
          }
          .footer ul{
-            list-style-type: none;
+         list-style-type: none;
          }
          .hove ul li a:hover{
-            color: #FFC000
+         color: #FFC000
          }
-         .hove ul li a {
-            color: black;
+         h6 {
+         color: black;
+         }
+         .card-body{
+         padding: 30px 5px 0px 5px
          }
       </style>
    </head>
    <body>
-      <div id="header">
+      <div class="header" id="abc">
          <div class="container">
             <div class="row">
-               <div class="col-md-3">
+               <div class="col-md-4">
                   <h2 style="padding: 10px 10px 0px 0px">Văn Hùng Watch</h2>
                </div>
-               <div class="col-md-4"  style="padding: 10px 10px 0px 0px">
-                  <form class="form-inline my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+               <div class="col-md-4 pt-3">
+                  <div class="row">
+                     <div style="float: left;">
+                        <form action="">
+                           <input type="text" placeholder="Nhập từ khóa tìm kiếm..." size="35px"/>
+                        </form>
+                     </div>
+                     <div style="float: right;">
+                        <button class="btnsearch" style="width: 32px;height: 30px">
+                        <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </div>
                </div>
-               <div class="col-md-2" style="padding: 10px 10px 0px 10px">Giỏ hàng</div>
-               <div class="col-md-1" style="padding: 10px 10px 0px 10px">
-                  <p style="margin: 0px; text-align: center;">Hotline</p>
-                  <p>1800.9812</p>
+               <div class="col-md-2 pt-3">
+                  <div class="" style="float: left; padding-left: 20px">
+                     <img src="hotline.png.png" alt="">
+                  </div>
+                  <div class="" style="float: right;">
+                     <p style="margin: 0px; font-size: 18px; text-align: center;">Hotline</p>
+                     <p style="text-align: center; color: #FEE437">0964376239</p>
+                  </div>
                </div>
-               <div class="col-md-2" style="padding: 10px">
-                  <p style="margin: 0px; text-align: center;">Hệ thống cửa hàng</p>
-                  <p style="text-align: center;">(100) showroom</p>
+               <div class="col-md-2 pt-3">
+                  <div class="left" style="float: left; padding-left: 50px">
+                     <button style="width: 34px; height: 30px">
+                     <i class="fas fa-shopping-cart"></i>
+                     </button>
+                  </div>
+                  <div class="right" style="float: right;">
+                     <a style="text-decoration: none; color: white;font-size: 18px" href="">Giỏ hàng</a>
+                  </div>
                </div>
             </div>
          </div>
@@ -120,27 +155,30 @@
       <div class="container sticky-top" style="background: white">
          <div class="row">
             <div class="col-md-3" id="menu-left">
+               <div class="icon">
+                  <i class="fas fa-align-justify"></i>
+               </div>
                <div class="menu-left">
                   <li class="nav-item dropdown">
-                     <a class="nav-link" href="#" id="navbarDropdown" style="color: white; padding: 20px;">DANH MỤC SẢN PHẨM</a>
+                     <a class="nav-link" href="#" id="navbarDropdown" style="color: white; padding: 20px 20px 20px 10px;">DANH MỤC SẢN PHẨM</a>
                      <div class="dropdown-content">
-                        <a class="dropdown-item" href="#">Đồng hồ chính hảng</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ chính hảng</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ nam</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ nam</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ nữ</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ nữ</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ đôi</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ đôi</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Phụ kiện đồng hồ</a>   
+                        <a class="dropdown-item" href="Chung.html">Phụ kiện đồng hồ</a>   
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ Epos Swiss</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Epos Swiss</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ Atlantic Swiss</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Atlantic Swiss</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ Diamond D</a>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Diamond D</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Đồng hồ Aries Gold</a>    
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Aries Gold</a>    
                      </div>
                   </li>
                </div>
@@ -150,7 +188,7 @@
                   <ul class="nav">
                      <div style="width: 200px; padding: 10px 40px;text-align: center;">
                         <li class="nav-item">
-                           <b><a class="nav-link active" href="#">ĐỒNG HỒ</a></b>
+                           <b><a class="nav-link active" href="Chung.html">ĐỒNG HỒ</a></b>
                         </li>
                      </div>
                      <div style="width: 200px; padding: 10px;text-align: center">
@@ -164,8 +202,13 @@
                         </li>
                      </div>
                      <div style="width: 200px; padding: 10px 40px;text-align: center">
-                        <li class="nav-item">
-                           <b><a class="nav-link active" href="#">TÀI KHOẢN</a></b>
+                        <li class="nav-item dropdown">
+                           <b><a class="nav-link" href="#" id="navbarDropdown" style="padding: 10px;">TÀI KHOẢN</a></b>
+                           <div class="dropdown-content">
+                              <a class="dropdown-item" href="Đăng Kí.html">Đăng Ký</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Đăng Nhập.html">Đăng Nhập</a>                                  
+                           </div>
                         </li>
                      </div>
                   </ul>
@@ -193,37 +236,47 @@
             </div>
          </div>
       </div>
+      <div class="container pt-3 pb-3">
+         <div class="row">
+            <div class="col-md-6">
+               <img src="wnhb15.jpg" width="550px" alt="">
+            </div>
+            <div class="col-md-6" style="padding-left: 34px">
+               <img src="hop-dong-ho-m.jpg" width="550px" alt="">
+            </div>
+         </div>
+      </div>
       <div class="container mb-5">
          <div class="row">
             <div class="col-md-2">
-               <a href=""><img src="https://www.dangquangwatch.vn/view/Pic/PA.jpg" alt=""></a>
+               <a href="Chung.html"><img src="AriesGold.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-               <a href=""><img src="https://www.dangquangwatch.vn/view/Pic/Atlatic.jpg" alt=""></a>
+               <a href="Chung.html"><img src="Atlatic.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-               <a href=""><img src="https://www.dangquangwatch.vn/view/Pic/Jacques.jpg" alt=""></a>
+               <a href="Chung.html"><img src="DiamondD.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-               <a href=""><img src="https://www.dangquangwatch.vn/view/Pic/DiamondD.jpg" alt=""></a>
+               <a href="Chung.html"><img src="Epos.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-               <a href=""><img src="https://www.dangquangwatch.vn/view/Pic/AriesGold.jpg" alt=""></a>
+               <a href="Chung.html"><img src="PA.jpg" alt=""></a>
             </div>
             <div class="col-md-2">
-               <a href=""><img src="https://www.dangquangwatch.vn/view/Pic/Epos.jpg" alt=""></a>
+               <a href="Chung.html"><img src="Jacques.jpg" alt=""></a>
             </div>
          </div>
       </div>
       <div class="container" >
          <div id="sp">
             <div>
-               <a href="">
+               <a href="Chung.html">
                   <h3>SẢN PHẨM MỚI</h3>
                </a>
             </div>
             <div class="right">
-               <a href="">Tất cả</a>
+               <a href="" style="background: #ababab">Tất cả</a>
                <a href="">Đồng hồ nam</a>
                <a href="">Đồng hồ nữ</a>
             </div>
@@ -234,41 +287,51 @@
             <div class="row">
                <div class="col-md-4" style="padding: 0px;">
                   <div class="col">
-                     <a href=""><img src="https://www.dangquangwatch.vn/upload/homeads/899313861_donghonhapkhau10.jpg" alt=""></a>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/homeads/899313861_donghonhapkhau10.jpg" alt=""></a>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
+                     <a href="TT Sản Phẩm.html">
                      <img src="https://www.dangquangwatch.vn//upload/product_small/1762452735_dong-ho-doi4.jpg" class="card-img-top" width="150" height="200" alt="...">
+                     </a>
                      <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ PHILIPPE AUGUSTE PA5004C + DIAMOND D DD6005B</p>
+                        <a href="TT Sản Phẩm.html" style=" text-decoration: none">
+                           <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5004C + DIAMOND D </h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">15.739.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/1211669676_dong-ho-chinh-hang-2.jpg" class="card-img-top" width="150" height="200" alt="...">
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1211669676_dong-ho-chinh-hang-2.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
                      <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ JACQUES LEMANS JL-1-1654.2ZG</p>
+                        <a href="TT Sản Phẩm.html" style=" text-decoration: none">
+                           <h6 class="card-title">ĐỒNG HỒ JACQUES LEMANS JL-1-1654.2ZG</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">5.770.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/1367739457_DONG-HO-CHINH-HANG-2.jpg" class="card-img-top" width="150" height="200" alt="...">
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1367739457_DONG-HO-CHINH-HANG-2.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
                      <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ EPOS SWISS E-7000.701.20.98.25</p>
+                        <a href="TT Sản Phẩm.html" style=" text-decoration: none">
+                           <h6 class="card-title">ĐỒNG HỒ EPOS SWISS E-7000.701.20.98.25</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">13.000.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/764709761_%C4%90%E1%BB%92NG-H%E1%BB%92-CH%C4%A8NH-H%C3%83NG-7.jpg" class="card-img-top" width="150" height="200" alt="...">
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/764709761_%C4%90%E1%BB%92NG-H%E1%BB%92-CH%C4%A8NH-H%C3%83NG-7.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
                      <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ JACQUES LEMANS JL-40-1D DD600</p>
+                        <a href="TT Sản Phẩm.html" style=" text-decoration: none">
+                           <h6 class="card-title">ĐỒNG HỒ JACQUES LEMANS JL-40-1D DD600</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">2.470.000 đ</p>
                      </div>
                   </div>
@@ -277,7 +340,7 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3 >ĐỒNG HỒ ATLANTIC SWISS</h3>
          </a>
       </div>
@@ -285,54 +348,66 @@
          <div class="row">
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/818875705_60335.45.21.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/818875705_60335.45.21.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-60335.45.21</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                        <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-60335.45.21</h6>
+                     </a>
                      <p class="card-text">11.180.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1029860979_D%E1%BB%92NG-H%E1%BB%92-CH%C3%8DNH-H%C3%83NG-32.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1029860979_D%E1%BB%92NG-H%E1%BB%92-CH%C3%8DNH-H%C3%83NG-32.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-22346.45.13</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                        <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-22346.45.13</h6>
+                     </a>
                      <p class="card-text">8.580.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/107484937_AT-Doi-20335.41.21R.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/107484937_AT-Doi-20335.41.21R.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-20335.41.21R</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                        <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-20335</h6>
+                     </a>
                      <p class="card-text">18.520.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1117745815_dong-ho-chinh-hang-1.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1117745815_dong-ho-chinh-hang-1.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-60342.45.61</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                        <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-60342.45.61</h6>
+                     </a>
                      <p class="card-text">8.390.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1908630676_atlanweb.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1908630676_atlanweb.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-29038.45</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                        <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-29038.45</h6>
+                     </a>
                      <p class="card-text">10.980.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2" >
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1413323040_%C4%91%E1%BB%93ng-h%E1%BB%93-nh%E1%BA%ADp-kh%E1%BA%A9u11.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1413323040_%C4%91%E1%BB%93ng-h%E1%BB%93-nh%E1%BA%ADp-kh%E1%BA%A9u11.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-221</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                        <h6 class="card-title">ĐỒNG HỒ ATLANTIC SWISS AT-221</h6>
+                     </a>
                      <p class="card-text">4.225.000 đ</p>
                   </div>
                </div>
@@ -340,7 +415,73 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
+            <h3>BÁN CHẠY NHẤT</h3>
+         </a>
+      </div>
+      <div class="container">
+         <div class="form-group">
+            <div class="row">
+               <div class="col-md-6">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/308340302_DONG-HO-CHINH-HANG-25.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/465010385_DONG-HO-CHINH-HANG-10.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/1932401686_DONG-HO-CHINH-HANG-14.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/890742140_DONG-HO-CHINH-HANG-13.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/649940411_DONG-HO-CHINH-HANG-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/393017589_DONG-HO-CHINH-HANG-16.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/370795910_DONG-HO-CHINH-HANG-24.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/14442602_DONG-HO-CHINH-HANG-32.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://www.dangquangwatch.vn/upload/img_big/1461377491_DONG-HO-CHINH-HANG-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container ">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3>ĐỒNG HỒ DIAMOND D</h3>
          </a>
       </div>
@@ -349,41 +490,49 @@
             <div class="row">
                <div class="col-md-4" style="padding: 0px;">
                   <div class="col">
-                     <a href=""><img src="https://www.dangquangwatch.vn/upload/homeads/455081688_dong-ho-nu-thoi-trang65.jpg" alt=""></a>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/homeads/455081688_dong-ho-nu-thoi-trang65.jpg" alt=""></a>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/321167286_dong-ho-nu-chinh-hang109.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ DIAMOND D DM64205IG-B</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/321167286_dong-ho-nu-chinh-hang109.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ DIAMOND D DM64205IG-B</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">4.265.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/3770_DM63175.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ DIAMOND D DM63175</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/321167286_dong-ho-nu-chinh-hang109.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ DIAMOND D DM63175</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">2.890.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/8555_DM61195IG-W.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ DIAMOND D DM61195IG-W</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/321167286_dong-ho-nu-chinh-hang109.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ DIAMOND D DM61195IG-W</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">5.800.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/1496298800_dong-ho-nu-thoi-trang.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ DIAMOND DM65105IG-R</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/1496298800_dong-ho-nu-thoi-trang.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ DIAMOND DM65105IG-R</h6>
+                        </a>
                         <p class="card-text" style="text-align: center; color: red">13.000.000 đ</p>
                      </div>
                   </div>
@@ -392,7 +541,7 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3>ĐỒNG HỒ PHILIPPE AUGUSTE</h3>
          </a>
       </div>
@@ -401,36 +550,44 @@
             <div class="row">
                <div class="col-md-3">
                   <div class="card" style="width: 17rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/950817260_dong-ho-nhap-khau-pa3.jpg" class="card-img-top img-thumbnail" alt="...">
-                     <div class="card-body">
-                        <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5005L</h6>
-                        <p class="card-text">6.488.000 đ</p>
+                     <a href="TT Sản Phẩm.html">
+                        <img src="https://www.dangquangwatch.vn/upload/product_hot/950817260_dong-ho-nhap-khau-pa3.jpg" class="card-img-top img-thumbnail" alt="...">
+                        <div class="card-body">
+                     </a>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;"><h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5005L</h6></a>
+                     <p class="card-text">6.488.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-3">
                   <div class="card" style="width: 17rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/963170666_dong-ho-pa.jpg" class="card-img-top img-thumbnail" alt="...">
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/963170666_dong-ho-pa.jpg" class="card-img-top img-thumbnail" alt="..."></a>
                      <div class="card-body">
-                        <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5008H</h6>
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5008H</h6>
+                        </a>
                         <p class="card-text">13.473.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-3">
                   <div class="card" style="width: 17rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/1905401185_dong-ho-nhap-khau-pa4.jpg" class="card-img-top img-thumbnail" alt="...">
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/1905401185_dong-ho-nhap-khau-pa4.jpg" class="card-img-top img-thumbnail" alt="..."></a>
                      <div class="card-body">
-                        <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5006G</h6>
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5006G</h6>
+                        </a>
                         <p class="card-text">6.803.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-3">
                   <div class="card" style="width: 17rem;" >
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/168568609_dong-ho-nhap-khau-pa2.jpg" class="card-img-top img-thumbnail" alt="...">
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/168568609_dong-ho-nhap-khau-pa2.jpg" class="card-img-top img-thumbnail" alt="..."></a>
                      <div class="card-body">
-                        <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5007B</h6>
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ PHILIPPE AUGUSTE PA5007B</h6>
+                        </a>
                         <p class="card-text">12.236.000 đ</p>
                      </div>
                   </div>
@@ -439,7 +596,7 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3>ĐỒNG HỒ EPOS SWISS</h3>
          </a>
       </div>
@@ -449,70 +606,81 @@
                <div class="col-md-4" style="padding: 0px;">
                   <div class="col">
                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
                               <img src="https://www.dangquangwatch.vn/upload/img_big/1214026792_epospin2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
+                           </div>
+                           <div class="carousel-item">
                               <img src="https://www.dangquangwatch.vn/upload/img_big/1710739006_epospin.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
+                           </div>
+                           <div class="carousel-item">
                               <img src="https://www.dangquangwatch.vn/upload/img_big/1013009713_epospin1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
+                           </div>
+                           <div class="carousel-item">
                               <img src="https://www.dangquangwatch.vn/upload/img_big/1159308017_epospin4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
+                           </div>
+                           <div class="carousel-item">
                               <img src="https://www.dangquangwatch.vn/upload/img_big/210060013_epospin3.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
+                           </div>
+                           <div class="carousel-item">
                               <img src="https://www.dangquangwatch.vn/upload/img_big/1022841565_Untitled-10.jpg" class="d-block w-100" alt="...">
-                            </div>
-                          </div>
-                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
+                           </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
                      </div>
-                    
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11.5rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/1058451460_dong-ho-thuy-sy56.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ EPOS SWISS E-7000.701.20.96.26</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/1058451460_dong-ho-thuy-sy56.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ EPOS SWISS E-7000.701.20.96.26</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">13.000.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11.5rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/95046097_dong-ho-nu-thuy-sy77.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ EPOS SWISS E-8000.700.22.88.32</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/95046097_dong-ho-nu-thuy-sy77.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ EPOS SWISS E-8000.700.22.88.32</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">22.800.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/1028923289_dong-ho-thuy-sy14.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ EPOS SWISS E-3420.152.</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/1028923289_dong-ho-thuy-sy14.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ EPOS SWISS E-3420.152.</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">32.100.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn/upload/product_hot/486239429_dong-ho-nu-thuy-sy76.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ EPOS SWISS E-8000.700.22</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/product_hot/486239429_dong-ho-nu-thuy-sy76.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ EPOS SWISS E-8000.700.22</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">15.100.000 đ</p>
                      </div>
                   </div>
@@ -521,7 +689,7 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3>ĐỒNG HỒ ARIES GOLD</h3>
          </a>
       </div>
@@ -529,54 +697,72 @@
          <div class="row">
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1726910040_dong-ho-chinh-hang-44.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1726910040_dong-ho-chinh-hang-44.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-G1031 G-WG </h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-G1031 G</h6>
+                        </a>
+                     
                      <p class="card-text">11.200.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/313779583_%C4%90%E1%BB%92NG-H%E1%BB%92-CH%C4%A8NH-H%C3%83NG-3.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/313779583_%C4%90%E1%BB%92NG-H%E1%BB%92-CH%C4%A8NH-H%C3%83NG-3.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-L5038 G-W</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-L5038 G-W</h6>
+                        </a>
+                     
                      <p class="card-text">3.225.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/582730192_%C4%91%E1%BB%93ng-h%E1%BB%93-n%E1%BB%AF-th%E1%BB%9Di-trang5.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/582730192_%C4%91%E1%BB%93ng-h%E1%BB%93-n%E1%BB%AF-th%E1%BB%9Di-trang5.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-L5033Z RG-BK</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-L5033Z RG</h6>
+                        </a>
+                    
                      <p class="card-text">3.975.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/702352562_Untitled-1.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/702352562_Untitled-1.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-L5031 G-W-L</h6>
+                      <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-L5031 G-W</h6>
+                        </a>
+                     
                      <p class="card-text">4.225.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2">
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1639649681_DONG-HO-CHINH-HANG-31.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1639649681_DONG-HO-CHINH-HANG-31.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-G9005 S-S</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-G9005 S-S</h6>
+                        </a>
+                    
                      <p class="card-text">9.225.000 đ</p>
                   </div>
                </div>
             </div>
             <div class="col-md-2" >
                <div class="card" style="width: 11rem;">
-                  <img src="https://www.dangquangwatch.vn//upload/product_small/1413323040_%C4%91%E1%BB%93ng-h%E1%BB%93-nh%E1%BA%ADp-kh%E1%BA%A9u11.jpg" class="card-img-top" alt="...">
+                  <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1413323040_%C4%91%E1%BB%93ng-h%E1%BB%93-nh%E1%BA%ADp-kh%E1%BA%A9u11.jpg" class="card-img-top" alt="..."></a>
                   <div class="card-body">
-                     <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-G1009 S-RW</h6>
+                     <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ ARIES GOLD AG-G1009 S</h6>
+                        </a>
+                     
                      <p class="card-text">4.225.000 đ</p>
                   </div>
                </div>
@@ -584,7 +770,7 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3>ĐỒNG HỒ JACQUES LEMANS</h3>
          </a>
       </div>
@@ -593,41 +779,53 @@
             <div class="row">
                <div class="col-md-4" style="padding: 0px;">
                   <div class="col">
-                     <a href=""><img src="https://www.dangquangwatch.vn/upload/homeads/82963313_dong-ho-nhap-khau50.jpg" alt=""></a>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/homeads/82963313_dong-ho-nhap-khau50.jpg" alt=""></a>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/1761617543_dong-ho-nhap-khau32.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ JACQUES LEMANS JL-11-2030/11</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1761617543_dong-ho-nhap-khau32.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ JACQUES LEMANS JL-11-2030/11</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">4.610.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/1211669676_dong-ho-chinh-hang-2.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ JACQUES LEMANS JL-1-1654.2ZG</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1211669676_dong-ho-chinh-hang-2.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ JACQUES LEMANS JL-1</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">5.770.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/1227200434_dong-ho-chinh-hang-3.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ JACQUES LEMANS JL-1-1852ZE+JL-1-1853ZE</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1227200434_dong-ho-chinh-hang-3.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ JACQUES LEMANS JL-1-1853ZE</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">13.000.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/149014326_Jl-1-1853ZE-DOI.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">ĐỒNG HỒ JACQUES LEMANS JL-1-1852ZE+JL-1-1853ZE</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/149014326_Jl-1-1853ZE-DOI.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">ĐỒNG HỒ JACQUES LEMANS JL-1-1853ZE</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">2.470.000 đ</p>
                      </div>
                   </div>
@@ -636,7 +834,7 @@
          </div>
       </div>
       <div class="container ">
-         <a href="" style="text-decoration: none; color: black">
+         <a href="Chung.html" style="text-decoration: none; color: black">
             <h3>PHỤ KIỆN ĐỒNG HỒ</h3>
          </a>
       </div>
@@ -645,41 +843,53 @@
             <div class="row">
                <div class="col-md-4" style="padding: 0px;">
                   <div class="col">
-                     <a href=""><img src="https://www.dangquangwatch.vn/upload/homeads/418101942_2045173578_day-da-chinh-hang111.jpg" alt=""></a>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn/upload/homeads/418101942_2045173578_day-da-chinh-hang111.jpg" alt=""></a>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/1267471508_hopdonghoco63.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">TỦ Philippe Auguste 6 NGĂN XOAY 7 NGĂN</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/1267471508_hopdonghoco63.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">TỦ Philippe Auguste 6 NGĂN XOAY 7 NGĂN</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">6.100.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/146707285_ddweb17.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">Dây da Bruno D BS-71C-443-04/20</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/146707285_ddweb17.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">Dây da Bruno D BS-71C-443-04/20</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">2.500.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/671677166_ddweb5.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">Dây da Đăng Quang D-A-2301PKS.4P.BR-18</p>
+                     <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/671677166_ddweb5.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">Dây da Đăng Quang D-A-2301PKS.4P.BR-18</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">350.000 đ</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-2">
                   <div class="card" style="width: 11rem; height: 20rem;">
-                     <img src="https://www.dangquangwatch.vn//upload/product_small/906071792_ddweb3.jpg" class="card-img-top" width="150" height="200" alt="...">
-                     <div class="card-body" style=" padding: 10px 5px 0px 5px">
-                        <p style="font-size: 15px; padding: 5px; margin: 0px">Dây da Đăng Quang D-71C-443-46A/20G</p>
+                    <a href="TT Sản Phẩm.html"><img src="https://www.dangquangwatch.vn//upload/product_small/906071792_ddweb3.jpg" class="card-img-top" width="150" height="200" alt="..."></a>
+                     <div class="card-body">
+                        <a href="TT Sản Phẩm.html" style="text-decoration: none;">
+                           <h6 class="card-title">Dây da Đăng Quang D-71C-443-46A/20G</h6>
+                        </a>
+                        
                         <p class="card-text" style="text-align: center; color: red">400.000 đ</p>
                      </div>
                   </div>
@@ -687,7 +897,7 @@
             </div>
          </div>
       </div>
-      <div class="footer" style="background-image: url(https://www.dangquangwatch.vn/view/Css/icon/bg3.jpg);">
+      <div class="footer" style="background-image: url(https://i.ytimg.com/vi/AkPGQyCKj7s/maxresdefault.jpg);">
          <div class="container mb-5">
             <div class="row">
                <div class="col-md-2"></div>
@@ -703,7 +913,7 @@
                <div class="row">
                   <div class="col-md-7" style="padding: 0 40px 0 0;" >
                      <div>
-                        <img src="https://www.dangquangwatch.vn/view/Pic/dong-ho-epos-review.jpg" width="664" alt="">
+                        <img src="https://www.dangquangwatch.vn/lib/ckfinder/images/103678229_3023684284416572_1318405893531154371_o.jpg" width="664" alt="">
                      </div>
                      <div>
                         <a href="" style="color: #FFC000; text-decoration: none;">Đồng hồ Epos Swiss-Nguồn cảm hứng đến từ sự hoàn mỹ</a>
@@ -853,17 +1063,19 @@
                         <div class="form-group">
                            <div class="row">
                               <h5 style="padding: 0 0 10px 0; color: #FFC000">KẾT NỐI VỚI CHÚNG TÔI</h5>
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="60px" height="40px" style="padding:0px 10px 0px 0px" alt="">
-                              <img src="https://pmcdeadline2.files.wordpress.com/2016/09/twitter-logo.jpg" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt="">
-                              <img src="https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt="">
-                              <img src="https://www.engage.it/wp-content/uploads/2014/07/Linkedin-Logo-e1406137001949.png" width="50px" height="40px" alt="">
+                              <a href="https://www.facebook.com/hungH24"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="60px" height="40px" style="padding:0px 10px 0px 0px" alt=""></a>
+                              <a href=""><img src="https://pmcdeadline2.files.wordpress.com/2016/09/twitter-logo.jpg" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://www.engage.it/wp-content/uploads/2014/07/Linkedin-Logo-e1406137001949.png" width="50px" height="40px" alt=""></a>
                            </div>
                         </div>
-                        <div>
-                           <img src="https://www.dangquangwatch.vn/view/Css/icon/ico11.png" alt="">
-                        </div>
-                        <div>
-                           <img src="https://www.dangquangwatch.vn/view/Css/icon/ico10.png" alt="">
+                        <div class="row">
+                           <div>
+                              <img src="https://www.dangquangwatch.vn/view/css/icon/bct2.png" alt="">
+                           </div>
+                           <div style="padding-left: 10px">
+                              <img src="https://www.dangquangwatch.vn/view/css/icon/bct.png" alt="">
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -886,6 +1098,7 @@
             </div>
          </div>
       </div>
+      
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
