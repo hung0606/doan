@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src=""></script>
+      <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+      <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <meta charset=utf-8>
+      <meta name=description content="">
+      <meta name=viewport content="width=device-width, initial-scale=1">
+      <style>
+         * {
+         padding: 0px;
+         margin: 0px;
+         }
+         body {
+         background: #f2f0f0
+         }
+         .dropdown{
+         position: relative;
+         display: inline-block;
+         }
+         /*sub-menu*/
+         .dropdown-content{
+         display: none;
+         position: absolute;
+         background-color: #f5f5f5;
+         z-index: 1;
+         list-style: none;
+         }
+         .dropdown-item:hover{
+         font-size: 150%
+         }
+         .dropdown:hover .dropdown-content{
+         display: block;
+         }
+         .icon {
+         float: left;
+         padding-top: 20px;
+         padding-left: 30px;
+         margin: 0px;
+         color: white;
+         }
+         .header{
+         background: #362314;
+         color: white;
+         padding: 10px 10px 0px 0px;       
+         }
+         #menu-left{
+         background: #613813;         
+         }
+         .footerr ul li a{
+         color: white;
+         text-decoration: none;
+         }
+         .footerr ul li a:hover{
+         color: blue
+         }
+         .footer ul{
+         list-style-type: none;
+         }
+         .tl ol li{
+         font-size: 15px
+         }
+		.container .disl{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .container .rot .tag a{
+         display: inline-block;
+         padding: 7px 15px;
+         border: 1px solid black;
+         border-radius: 8px;
+         margin-right: 10px;
+         margin-bottom: 10px;
+         }
+         .container .disk{
+         display: flex;
+         justify-content: space-between;
+         }
+         .container .form-group .texta a{
+         color: black;
+         text-decoration: none;
+         font-size: 14px;
+         }
+         .container .form-group .texta a:hover{
+         background: #FFC000;
+         }
+         .container .form-group .texta p{
+         	font-size: 14px;
+         	padding-left: 5px;
+         }
+         .container .texta .tex li{
+         	font-size: 14px;
+         	text-decoration: none;
+         	color: black;
+         	padding-bottom: 20px
+         }
+         .container .texta .tex li:hover{
+         	color: #FFC000
+         }
+         .bntxemthem a{
+         	display: table;
+         	margin: auto;
+         	border-radius: 20px;
+         	border: 1px solid black;
+         	margin-top: 15px;
+         	padding: 10px 50px;
+         	text-decoration: none;
+         	font-size: 15px
+         }
+         .bntxemthem a:hover{
+         	background: #FFC000;
+         	color: white;
+         }
+         .btnxemthem a{
+         	display: table;
+         	margin: auto;
+         	border-radius: 20px;
+         	border: 1px solid black;
+         	margin-top: 30px;
+         	padding: 10px 50px;
+         	text-decoration: none;
+         	font-size: 15px
+         }
+         .btnxemthem a:hover{
+         	background: #FFC000;
+         	color: white;
+         }
+         .copp{
+         	color: white;
+         	font-size: 15px;
+         	text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="header" id="abc">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <a href="Trang Chủ1.html" style="text-decoration: none; color: white">
+                     <h2 style="padding: 10px 10px 0px 0px">Văn Hùng Watch</h2>
+                  </a>
+               </div>
+               <div class="col-md-4 pt-3">
+                  <div class="row">
+                     <div style="float: left;">
+                        <form action="">
+                           <input type="text" placeholder="Nhập từ khóa tìm kiếm..." size="35px"/>
+                        </form>
+                     </div>
+                     <div style="float: right;">
+                        <button class="btnsearch" style="width: 32px;height: 30px">
+                        <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2 pt-3">
+                  <div class="" style="float: left; padding-left: 20px">
+                     <img src="hotline.png.png" alt="">
+                  </div>
+                  <div class="" style="float: right;">
+                     <p style="margin: 0px; font-size: 18px; text-align: center;">Hotline</p>
+                     <p style="text-align: center; color: #FEE437">0964376239</p>
+                  </div>
+               </div>
+               <div class="col-md-2 pt-3">
+                  <div class="left" style="float: left; padding-left: 50px">
+                     <button style="width: 34px; height: 30px">
+                     <i class="fas fa-shopping-cart"></i>
+                     </button>
+                  </div>
+                  <div class="right" style="float: right;">
+                     <a style="text-decoration: none; color: white;font-size: 18px" href="">Giỏ hàng</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container sticky-top" style="background: white">
+         <div class="row">
+            <div class="col-md-3" id="menu-left">
+               <div class="icon">
+                  <i class="fas fa-align-justify"></i>
+               </div>
+               <div class="menu-left">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" id="navbarDropdown" style="color: white; padding: 20px 20px 20px 10px;">DANH MỤC SẢN PHẨM</a>
+                     <div class="dropdown-content">
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ chính hảng</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ nam</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ nữ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ đôi</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Phụ kiện đồng hồ</a>   
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Epos Swiss</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Atlantic Swiss</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Diamond D</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Chung.html">Đồng hồ Aries Gold</a>    
+                     </div>
+                  </li>
+               </div>
+            </div>
+            <div class="col-md-9 hove" style="padding: 0px;">
+               <div class="row" style="display: flex; justify-content: space-between;">
+                  <ul class="nav">
+                     <div style="width: 200px; padding: 10px 40px;text-align: center;">
+                        <li class="nav-item">
+                           <b><a class="nav-link active" href="Chung.html">ĐỒNG HỒ</a></b>
+                        </li>
+                     </div>
+                     <div style="width: 200px; padding: 10px;text-align: center">
+                        <li class="nav-item">
+                           <b><a class="nav-link active" href="#">KHUYẾN MÃI</a></b>
+                        </li>
+                     </div>
+                     <div style="width: 200px; padding: 10px;text-align: center">
+                        <li class="nav-item">
+                           <b><a class="nav-link active" href="#">PHỤ KIỆN</a></b>
+                        </li>
+                     </div>
+                     <div style="width: 200px; padding: 10px 40px;text-align: center">
+                        <li class="nav-item dropdown">
+                           <b><a class="nav-link" href="#" id="navbarDropdown" style="padding: 10px;">TÀI KHOẢN</a></b>
+                           <div class="dropdown-content">
+                              <a class="dropdown-item" href="Đăng Kí.html">Đăng Ký</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Đăng Nhập.html">Đăng Nhập</a>                                  
+                           </div>
+                        </li>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container mt-4">
+         <h1 style="text-align: center; color: #FFC000">CHÍNH SÁCH BẢO HÀNH</h1>
+         <div class="tl mt-5">
+            <ol type="I">
+               <b>
+               	<li>Địa chỉ Trung tâm bảo hành của FDTQ:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>Hà Nội: Số 55 Trần Đăng Ninh, Quận Cầu Giấy, Hà Nội | Tel: 024.3793.9481</li>
+                  <li>Hà Nội: Số 55 Trần Đăng Ninh, Quận Cầu Giấy, Hà Nội | Tel: 024.3793.9481</li>
+                  <li>Hà Nội: Số 55 Trần Đăng Ninh, Quận Cầu Giấy, Hà Nội | Tel: 024.3793.9481</li>
+               </ol>
+               <b>
+               	<li>Thời gian nhận và trả bảo hành:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>Tại trung tâm bảo hành: Từ 8h30 đến 17h00 các ngày trong tuần (trừ chủ nhật và các ngày lễ, Tết).</li>
+                  <li>Tại các hệ thống 100 cửa hàng Đăng Quang Watch trên toàn quốc tất cả các ngày trong tuần kể cả ngày lễ và chủ nhật, từ 8h30 đến 21h</li>
+               </ol>
+               <b>
+               	<li>Chính sách bảo hành:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>Đồng hồ được bảo hành từ 1-10 năm kể từ ngày mua theo quy định của hãng sản xuất (tùy từng hãng sẽ có thời gian bảo hành khác nhau).</li>
+                  <li>Riêng khách hàng mua đồng hồ tại hệ thống Đăng Quang Watch sẽ được hưởng thêm những quyền lợi sau:</li>
+                  <li>Thay pin miễn phí trọn đời sản phẩm áp dụng đối với 1 số thương hiệu đồng hồ khi mua tại FDTQ</li>
+               </ol>
+               <b>
+               	<li>Phạm vi tiếp nhận đồng hồ bảo hành và sửa chữa:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>FDTQ SHOP tiếp nhận bảo hành và sửa chữa đối với tất cả các sản phẩm được mua tại hệ thống FDTQ SHOP.</li>
+                  <li>Những sản phẩm mang thương hiệu mà Đăng Quang Watch là nhà phân phối độc quyền tại Việt Nam cũng sẽ tiếp nhận bảo hành và sửa chữa.</li>
+                  <li>Ngoài những trường hợp nêu trên, Đăng Quang Watch sẽ tiếp nhận đồng hồ để bảo hành hoặc sửa chữa cho quý khách hàng.</li>
+               </ol>
+               <b>
+               	<li>Điều kiện để đồng hồ được bảo hành miễn phí và cách tính phí đối với đồng hồ sửa chữa:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>Nếu sản phẩm mua tại FDTQ SHOP và còn trong thời gian bảo hành, khách hàng phải xuất trình được những giấy tờ liên quan đến sản phẩm như sổ bảo hành hoặc hóa đơn mua hàng…, khách hàng sẽ được bảo hành miễn phí theo như quy định của hãng sản xuất.</li>
+                  <li>Nếu đồng hồ hết thời gian bảo hành hoặc Khách hàng không mang theo giấy tờ cần thiết liên quan đến sản phẩm thì Khách hàng sẽ mất phí sửa chữa.</li>
+               </ol>
+               <b>
+               	<li>Phạm vi bảo hành đồng hồ:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>FDTQ SHOP chỉ bảo hành các lỗi về sản phẩm (như lỗi người thiết kế, sổ chỉ), </li>
+               </ol>
+               <b>
+               	<li>Các trường hợp không nằm trong phạm vi bảo hành:</li>
+               </b>
+               <ol type="1" style="padding: 0px 20px">
+                  <li>Các lỗi về vỏ và dây của đồng hồ như bong tróc hoặc phai lớp mại, ố mặt số…</li>
+                  <li>Các lỗi rơi vỡ, va đập làm xước kính trong quá trình Khách hàng sử dụng gây ra.</li>
+                  <li>Dây da bị gẫy, nứt hoặc bong.</li>
+                  <li>Không bảo hành cho trường hợp điều chỉnh, sử dụng không đúng cách của người dùng.</li>
+                  <li>Không bảo hành cho đồng hồ đã sửa chữa tại những nơi không phải là trung tâm bảo hành của Đăng Quang Watch.</li>
+               </ol>
+            </ol>
+         </div>
+         <span style="font-size: 17px"><b>Lưu ý:</b></span>
+         <p style="margin: 0px">- Khách hàng chịu trách nhiệm cho chi phí vận chuyển đến Trung tâm bảo hành.</p>
+         <p>- Hết thời hạn bảo hành, chi phí sửa chữa sẽ được trung tâm bảo hành hỗ trợ với giá ưu đãi nhất.</p>
+      </div>
+      <div class="footer">
+      	<div class="container-fluid" style="background: white">
+      	<div class="container">
+         <div class="form-group">
+            <div class="row">
+               <div class="col-md-8 mt-4">
+                  <h3>TIN TỨC - SỰ KIỆN</h3>
+                  <hr>
+                  <div class="row">
+                     <div class="col-md-7">
+                        <img src="https://www.dangquangwatch.vn//upload/article/468980239_dong_ho_deo_tay.jpg" width="405"  alt="">
+                     </div>
+                     <div class="col-md-5">
+                        <div class="form-group">
+                           <div class="row">
+                              <div class="col-md-4" style="padding: 0px">
+                                 <img src="https://www.dangquangwatch.vn//upload/article/1728275126_khuyen-mai.jpg" width="106" height="70" alt="">
+                              </div>
+                              <div class="col-md-8">
+                                 <a style="font-size: 14px;color: black;text-decoration: none" href="">Ưu đãi hè 2020: Nhận kính mắt chính hãng hoàn toàn miễn phí tại Văn Hùng Watch</a>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="row">
+                              <div class="col-md-4" style="padding: 0px">
+                                 <img src="https://www.dangquangwatch.vn//upload/article/2064580736_tin-tuc2606.jpg" width="106" height="70" alt="">
+                              </div>
+                              <div class="col-md-8">
+                                 <a style="font-size: 14px;color: black;text-decoration: none" href="">MUA 2 TÍNH TIỀN MỘT - ƯU ĐÃI TẶNG KÍNH MÁT 5 TRIỆU ĐỒNG</a>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="row">
+                              <div class="col-md-4" style="padding: 0px">
+                                 <img src="https://www.dangquangwatch.vn//upload/article/717364511_khaitruongthainguyen.jpg" width="106" height="70" alt="">
+                              </div>
+                              <div class="col-md-8">
+                                 <a style="font-size: 14px;color: black;text-decoration: none" href="">Văn Hùng Watch Đà Nẵng – Giảm giá cực lớn lên đến 25%</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <a style="font-size: 15px;color: black;text-decoration: none" href="">Tại sao đồng hồ Thụy Sỹ lại có sức hút lớn đến vậy</a>
+                  </div>
+                  <div class="btnxemthem">
+                     <a href="">Xem tất cả</a>
+                  </div>                  
+               </div>
+               <div class="col-md-4 mt-4">
+                  <h3>VIDEO</h3>
+                  <hr>
+                  <div>
+                     <video width="340" height="209" controls>
+                        <source src="https://youtu.be/ETwTZbqgrL4" type="video/mp4">
+                        <source src="https://youtu.be/ETwTZbqgrL4" type="video/ogg">
+                     </video>
+                  </div>
+                  <div>
+                     <b><a style="font-size: 14px;text-decoration: none;color: black" href="">ĐỒNG HỒ JACQUES LEMANS JL-1-1654ZD</a></b>
+                  </div>
+                  <div class="row" style="padding-top: 20px">
+                     <div class="col-md-4">
+                        <video width="105" height="70" controls>
+                           <source src="https://youtu.be/ETwTZbqgrL4" type="video/mp4">
+                           <source src="https://youtu.be/ETwTZbqgrL4" type="video/ogg">
+                        </video>
+                     </div>
+                     <div class="col-md-8">
+                        <a style="font-size: 14px;text-decoration: none;color: black" href="">Đăng Quang Watch | Review đồng hồ Jacques Lemans JL-1-1654ZG</a>
+                     </div>
+                  </div>
+                  <div class="bntxemthem">
+                     <a href="">Xem Kênh: VanHung.TV</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="container" style="padding: 30px 0px">
+         <div class="disl">
+            <div>
+               <div>
+                  <h5>HOTLINE</h5>
+               </div>
+               <div class="row">
+                  <div>
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                     <p style="font-size: 18px; padding-left: 7px">1800.6050</p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div>
+                  <h5>GỌI ĐẶT HÀNG</h5>
+               </div>
+               <div class="row">
+                  <div>
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                     <p style="font-size: 18px; padding-left: 7px">0964376239</p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div>
+                  <h5>ĐĂNG KÝ NHẬN THÔNG TIN MỚI</h5>
+               </div>
+               <div>
+                  <form action="">
+                     <input style="width: 225px; height: 35px" type="text" placeholder="Nhập email của bạn tại đây">
+                     <input style="height: 35px; color: white;background: black" type="submit" value="Đăng Kí">
+                  </form>
+               </div>
+            </div>
+            <div>
+               <div>
+                  <h5>KẾT NỐI MẠNG XÃ HỘI</h5>
+               </div>
+               <div>
+                  <div class="row">
+                     <a href="https://www.facebook.com/hungH24" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="60px" height="40px" style="padding:0px 10px 0px 0px" alt=""></a>
+                              <a href=""><img src="https://pmcdeadline2.files.wordpress.com/2016/09/twitter-logo.jpg" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png" width="60px" height="40px" style="padding:0px 10px 0px 0px"  alt=""></a>
+                              <a href=""><img src="https://www.engage.it/wp-content/uploads/2014/07/Linkedin-Logo-e1406137001949.png" width="50px" height="40px" alt=""></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid" style="background: white">
+      	<div class="container">
+         <div class="form-group">
+            <div class="row texta">
+               <div class="col-md-4">
+                  <div>
+                     <h5>LIÊN HỆ</h5>
+                  </div>
+                  <div style="padding-top: 25px">
+                     <b>
+                        <h6>CÔNG TY CỔ PHẦN TRỰC TUYẾN ĐĂNG QUANG.</h6>
+                     </b>
+                  </div>
+                  <div class="row">
+                     <div style="padding-left: 15px">
+                        <i class="fas fa-map-marker-alt"></i>
+                     </div>
+                     <div>
+                        <p>VPGD: Số 55 Trần Đăng Ninh, Cầu Giấy, Hà Nội.</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div style="padding-left: 15px">
+                        <i class="fas fa-phone-volume"></i>
+                     </div>
+                     <div>
+                        <p>Hotline: 1800.6005</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div style="padding-left: 15px">
+                        <i class="fas fa-envelope"></i>
+                     </div>
+                     <div>
+                        <p>contact@dangquangwatch.vn</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2 tex">
+                  <div>
+                     <h5>HỖ TRỢ</h5>
+                  </div>
+                  <div style="padding-top: 25px">
+                     <ol>
+                        <a href="">
+                           <li>Chính sách bảo hành</li>
+                        </a>
+                        <a href="">
+                           <li>Chính sách đổi hàng</li>
+                        </a>
+                        <a href="">
+                           <li>Chính sách bảo mật</li>
+                        </a>
+                        <a href="">
+                           <li>Chính sách vân chuyển</li>
+                        </a>
+                        <a href="">
+                           <li>Hướng dẫn thanh toán</li>
+                        </a>
+                        <a href="">
+                           <li>Hướng dẫn mua hàng</li>
+                        </a>
+                     </ol>
+                  </div>
+               </div>
+               <div class="col-md-2 tex">
+                  <div>
+                     <h5>SẢN PHẨM</h5>
+                  </div>
+                  <div style="padding-top: 25px">
+                     <ul>
+                        <a href="">
+                           <li>Đồng hồ chính hãng</li>
+                        </a>
+                        <a href="">
+                           <li>Dây đồng hồ</li>
+                        </a>
+                        <a href="">
+                           <li>Hộp đựng đồng hồ</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-4 rot">
+                  <div>
+                     <h5>DANH MỤC</h5>
+                  </div>
+                  <div style="padding-top: 25px" class="tag" style="display: block;">
+                     <a href="">Hệ thống cửa hàng</a>                     
+                     <a href="">Tin tức - Sự kiện</a>
+                     <a href="">Chứng nhận thương hiệu</a>
+                     <a href="">Giới thiệu</a>
+                     <a href="">Góc hỏi đáp</a>
+                  </div>
+                  <div class="row">
+                     <div>
+                        <img src="https://www.dangquangwatch.vn/view/css/icon/bct2.png" alt="">
+                     </div>
+                     <div>
+                        <img src="https://www.dangquangwatch.vn/view/css/icon/bct.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div>
+         	<p style="margin: 0px"><b>Văn Hùng Watch</b></p>
+         	<p style="font-size: 14px">Nhà phân phối độc quyền các thương hiệu đồng hồ, kính mắt, bút ký nổi tiếng thế giới: Epos Swiss, Atlantic Swiss, Diamond D, Philippe Auguste, Jacques Lemans, Citizen, Aries Gold, dây da đồng hồ, dây đồng hồ đeo tay....</p>
+         </div>
+      </div>
+      </div>
+      <div class="container-fluid" style="background: black; margin: 0px;padding: 0px">
+      	<div class="container">
+      		<div class="copp">
+      			<p style="padding: 18px 0px;margin: 0px">Copyright &copy; 2020 - 2030 VanHung Watch. </p>
+      		</div>
+      	</div>
+      </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   </body>
+</html>
